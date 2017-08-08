@@ -1,0 +1,13 @@
+<h2>Edit your task</h2>
+<%= form_for(@task) do |t| %>
+  <%= t.label :title %><br>
+  <%= t.text_field :title %><br>
+
+  <%= t.label :description %><br>
+  <%= t.text_field :description %><br>
+  <br>
+
+  <%= t.submit %>
+<% end %>
+<br>
+<%= link_to "Back to Index", tasks_path %>
